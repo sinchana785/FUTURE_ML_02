@@ -36,12 +36,11 @@ Below are the class-wise performance analytics across our multi-target objective
 | Account Access | 0.88 | 0.87 | 0.87 | ~410 |
 | General Query | 0.82 | 0.85 | 0.83 | ~480 |
 
-####  Priority (SLA) Prediction Metrics
-| Urgency Tier | Precision | Recall | F1-Score | Support |
-| :--- | :---: | :---: | :---: | :---: |
-| High | 0.89 | 0.86 | 0.87 | ~390 |
-| Medium | 0.81 | 0.83 | 0.82 | ~650 |
-| Low | 0.85 | 0.87 | 0.86 | ~650 |
+Urgency Tier,Precision,Recall,F1-Score,Support
+Critical,0.25,0.25,0.25,411
+High,0.26,0.26,0.26,409
+Medium,0.30,0.25,0.27,459
+Low,0.24,0.28,0.26,415
 
 > *Note: Metrics are balanced via penalization weights (`class_weight='balanced'`) to prevent minority class suppression due to asymmetric ticket distributions.*
 
